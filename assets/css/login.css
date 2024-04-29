@@ -321,7 +321,9 @@ main.sign-up-mode .carousel {
         padding: 1.5rem 1rem;
         border-radius: 1.6rem;
     }
-
+    .carousel .img {
+        display: none;
+    }
     form {
         padding: 1rem 2rem 2.5rem;
     }
