@@ -12,8 +12,7 @@
         <div class="box">
             <div class="inner-box">
                 <div class="forms-wrap">
-                    <div id="error"></div>
-                    <form action="index.html" id="form" autocomplete="off" class="sign-in-form">
+                    <form id="form" autocomplete="off" class="sign-in-form">
                         <div class="logo">
                             <img src="/assets/img/favicon.png" alt="logo">
                             <h4>Cactus</h4>
@@ -27,16 +26,22 @@
 
                         <div class="actual-form">
                             <div class="input-wrap">
-                                <input type="text" id="name" autocomplete="off" required class="input-field">
+                                <input type="text" id="name" autocomplete="off" class="input-field">
                                 <label>Name</label>
+                                <i class='bx bx-check'></i>
+                                <i class='bx bx-calendar-exclamation'></i>
+                                <span>Error message</span>
                             </div>
 
                             <div class="input-wrap">
-                                <input type="password" id="pass" autocomplete="off" required class="input-field">
+                                <input type="password" id="pass" autocomplete="off" class="input-field">
                                 <label>Password</label>
+                                <i class='bx bx-check'></i>
+                                <i class='bx bx-calendar-exclamation'></i>
+                                <span>Error message</span>
                             </div>
 
-                            <input type="submit" value="Sign In" class="sign-btn">
+                            <button type="submit" id="submit-btn" class="sign-btn">Sign In</button>
 
                             <p class="text">Forget your password or you login details?
                                 <a href="#">Get help</a> signing in
@@ -44,7 +49,7 @@
                             
                         </div>
                     </form>
-                    <form action="index.html" autocomplete="off" class="sign-up-form">
+                    <form id="form2" autocomplete="off" class="sign-up-form">
                         <div class="logo">
                             <img src="/assets/img/favicon.png" alt="logo">
                             <h3>Cactus</h3>
@@ -58,21 +63,30 @@
 
                         <div class="actual-form">
                             <div class="input-wrap">
-                                <input type="text" id="name" autocomplete="off" required class="input-field">
-                                <label>Name</label>
+                                <input type="text" id="name2"  autocomplete="off" class="input-field">
+                                <label for="up-name">Name</label>
+                                <i class='bx bx-check'></i>
+                                <i class='bx bx-calendar-exclamation'></i>
+                                <span>Error message</span>
                             </div>
 
                             <div class="input-wrap">
-                                <input type="email" id="email" autocomplete="off" required class="input-field">
-                                <label>Email</label>
+                                <input type="email" id="email" autocomplete="off" class="input-field">
+                                <label for="up-email">Email</label>
+                                <i class='bx bx-check'></i>
+                                <i class='bx bx-calendar-exclamation'></i>
+                                <span>Error message</span>
                             </div>
 
                             <div class="input-wrap">
-                                <input type="password" id="pass" autocomplete="off" required class="input-field">
-                                <label>Password</label>
+                                <input type="password" id="pass2" autocomplete="off" class="input-field">
+                                <label for="up-pass">Password</label>
+                                <i class='bx bx-check'></i>
+                                <i class='bx bx-calendar-exclamation'></i>
+                                <span>Error message</span>
                             </div>
 
-                            <input type="submit" value="Sign Up" class="sign-btn">
+                            <button type="submit" id="submit-btn" class="sign-btn">Sign Up</button>
 
                             <p class="text">
                                 By signing up, I agree to the <a href="#">Terms of Services</a> and <a href="#">Privacy Policy</a>
